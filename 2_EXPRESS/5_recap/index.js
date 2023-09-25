@@ -6,7 +6,8 @@ const app = express()
 const caminho = path.join(__dirname, "templates")
 
 app.get('/', (requisicao, resposta) => {
-    resposta.sendFile(`${caminho}/index.html`)
+    // resposta.sendFile(`${caminho}/index.html`)
+    resposta.send("Estou utilizando nodemon!")
 })
 
 app.listen(3003, () => {
